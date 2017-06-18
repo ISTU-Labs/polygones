@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Lab2New.Properties
+namespace Main.Properties
 {
 
 
@@ -16,7 +16,7 @@ namespace Lab2New.Properties
     ///   Класс ресурсов со строгим типом для поиска локализованных строк и пр.
     /// </summary>
     // Этот класс был автоматически создан при помощи StronglyTypedResourceBuilder
-    // класс с  помощью таких средств, как ResGen или Visual Studio.
+    // класс с помощью таких средств, как ResGen или Visual Studio.
     // Для добавления или удаления члена измените файл .ResX, а затем перезапустите ResGen
     // с параметром /str или заново постройте свой VS-проект.
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
@@ -44,7 +44,7 @@ namespace Lab2New.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Lab2New.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Main.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

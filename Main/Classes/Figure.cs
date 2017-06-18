@@ -9,12 +9,12 @@ namespace Main
         public int Degree { get; set; }
         public double Size { get; set; }
 
-        public override string ToString()
+        public override string ToString()   
         {
             return String.Format("Центр: ({0};{1})\tУгол наклона: {2} град.\tРадиус: {3}",
                 X, Y, Degree, Size);
         }
-        public virtual double S()
+        public virtual double S()   
         {
             return 1;
         }
