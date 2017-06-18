@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="2709aee1-24e9-438a-8dbe-07806ccba11f" absoluteBounds="1.375, 2, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClasses1DataContext/Circles" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a142aeb-f7e5-4932-a09e-6fae13bea23b" absoluteBounds="1.3900000000000001, 2.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="700e28ae-36af-4230-84f2-3fba948a2051" absoluteBounds="4.375, 2.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClasses1DataContext/Polygons" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a009f42-ed40-4525-8234-85e9a9948ba4" absoluteBounds="4.39, 2.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="729a5ed5-7e04-4ef7-9dae-d67b27d1a426" absoluteBounds="4.25, 5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClasses1DataContext/Rectangles" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f0dc105-daf7-412f-9abb-1d0bf2285a72" absoluteBounds="4.265, 5.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

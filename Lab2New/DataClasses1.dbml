@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Figures" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LUCKY\SQLEXPRESS;Initial Catalog=Figures;Integrated Security=True" SettingsObjectName="Lab2New.Properties.Settings" SettingsPropertyName="FiguresConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Circles" Member="Circles">
+    <Type Name="Circles">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Y" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="X" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Degree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Polygons" Member="Polygons">
+    <Type Name="Polygons">
+      <Column Name="IdPol" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="X" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Degree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rectangles" Member="Rectangles">
+    <Type Name="Rectangles">
+      <Column Name="IdRec" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Coef" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Y" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="X" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Degree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.add_circles" Method="add_circles">
+    <Parameter Name="Y" Parameter="y" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X" Parameter="x" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.add_polygons" Method="add_polygons">
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Y" Parameter="y" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X" Parameter="x" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.add_rectangle" Method="add_rectangle">
+    <Parameter Name="Coef" Parameter="coef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Y" Parameter="y" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X" Parameter="x" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.del_circles" Method="del_circles">
+    <Parameter Name="Y" Parameter="y" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X" Parameter="x" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.del_polygons" Method="del_polygons">
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Y" Parameter="y" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X" Parameter="x" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.del_rectangle" Method="del_rectangle">
+    <Parameter Name="Coef" Parameter="coef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Y" Parameter="y" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X" Parameter="x" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Degree" Parameter="degree" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Size" Parameter="size" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
